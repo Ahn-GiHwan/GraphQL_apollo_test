@@ -5,8 +5,6 @@ const { join } = require("path");
 // The GraphQL schema
 const typeDefs = gql`
   type Query {
-    "A simple type for getting started!"
-    hello: String
     books: [Book]
     book(bookId: Int): Book
   }
@@ -34,7 +32,6 @@ const typeDefs = gql`
 // A map of functions which return data for the schema.
 const resolvers = {
   Query: {
-    hello: () => "world",
     books: () => {
       return JSON.parse(readFileSync(join(__dirname, "books.json")).toString());
     },
