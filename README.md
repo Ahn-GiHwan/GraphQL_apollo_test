@@ -94,4 +94,4 @@ const resolvers = {
 };
 ```
 
-_(내부 폴더에 books.json파일로 데이터 구성)_
+_(폴더에 내부에 books.json파일을 생성하여 데이터 구성)_
